@@ -39,7 +39,7 @@ const run = async () => {
       },
       h: {
         alias: "hours",
-        describe: "Number of Hours",
+        describe: "Number of Hours to fill upto",
         type: "int",
         demandOption: false,
         default: 8,
@@ -50,10 +50,11 @@ const run = async () => {
         type: "int",
         demandOption: false,
         default: 0,
+        hidden: true,
       },
       d: {
         alias: "date",
-        describe: "Date",
+        describe: "Date (dd-MM-yy)",
         type: "string",
         demandOption: false,
         default: moment(new Date()).format("DD-MM-YY"),

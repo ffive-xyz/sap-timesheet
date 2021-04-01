@@ -1,6 +1,6 @@
 {
   "name": "sap-timesheet",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./src/index.js",
   "license": "MIT",
   "author": {
@@ -8,8 +8,15 @@
     "email": "ankur.nigam198@gmail.com",
     "url": "https://github.com/ankur198"
   },
-  "repository": {"url": "https://github.com/ffive-xyz/sap-timesheet"},
-  "keywords": ["sap", "s4hana", "puppeteer", "cli"],
+  "repository": {
+    "url": "https://github.com/ffive-xyz/sap-timesheet"
+  },
+  "keywords": [
+    "sap",
+    "s4hana",
+    "puppeteer",
+    "cli"
+  ],
   "bin": {
     "sap-timesheet": "./src/index.js"
   },

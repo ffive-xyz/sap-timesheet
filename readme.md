@@ -9,14 +9,28 @@ A CLI tool to fill SAP s4hana timesheet.
 or
 
 `yarn global add sap-timesheet`
+
 ## Usage
 
-`sap-timesheet init`
+`sap-timesheet init` to initialize/configure
 
 `sap-timesheet -m "your message"`
 
-You can see all arguments by:
-`sap-timesheet`
+**All Arguments**
+
+```
+Options:
+      --help     Show help                                              [boolean]
+      --version  Show version number                                    [boolean]
+  -m, --message  Message                                      [string] [required]
+  -h, --hours    Number of Hours to fill upto                        [default: 8]
+  -d, --date     Date (dd-MM-yy)               [string] [default: <today's date>]
+  -p, --project  Project Name                 [string] [default: <set from init>]
+```
+
+Example using all arguments:
+
+    sap-timesheet -m "youMessage" -h 2 -d "30-12-21" -p "unique substring of project name"
 
 ## How it works
 
