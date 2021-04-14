@@ -86,7 +86,7 @@ const run = async () => {
           argv.message,
           argv.hours,
           argv.offset,
-          moment(argv.date, "DD-MM-YY").toDate(),
+          moment(argv.date, "DD-MM-YY", true).toDate(),
           argv.p
         );
       }
