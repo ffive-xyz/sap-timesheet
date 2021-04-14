@@ -81,6 +81,12 @@ const run = async () => {
           )
         );
       }
+      if (!moment(argv.date, "DD-MM-YY", true).isValid()) {
+        isValid = false;
+        console.log(
+          chalk.red("Invalid date format. Correct date format is DD-MM-YY")
+        );
+      }
       if (isValid) {
         await markAttendance.markAttendance(
           argv.message,
